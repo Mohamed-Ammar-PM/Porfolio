@@ -1,0 +1,117 @@
+.container{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10vh;
+    width: 80%;
+}
+.container .container1{
+    display: flex;
+}
+.container .container1 .content{
+    width: 50%;
+    margin: auto;
+}
+.container .container1 .content h2{
+    font-weight: bolder;
+    font-size: 30px;
+    margin-top: 20px;
+}
+.container .container1 .content h3{
+    color: #0d6efd;
+    font-weight: bolder;
+    font-size: 18px;
+    margin: 20px 0px;
+}
+.container .container1 .content p{
+    margin-top: 30px;
+}
+.container .container1 .content button{
+    width: 200px;
+    padding: 10px 20px;
+    background-color: #0d6efd;
+    color: white;
+    border-radius: 4px;
+    margin-top: 20px;
+    cursor: pointer;
+    border-color: #0d6efd;
+}
+
+.content p{
+    font-size:large;
+    font-style: oblique;
+}
+
+.container .container1 .image{
+    width: 50%;
+    text-align: center;
+}
+.container .container1 .image img{
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 100%;
+    margin-top: 10px;
+}
+.container .icons{
+    /* background-color: #0d6efd; */
+    /* height: 10vh; */
+    text-align: center;
+}
+.container .icons i{
+    font-size: 25px;
+    margin: 0px 20px;
+    margin-top: 100px;
+    cursor: pointer;
+}
+.container .icons i:focus{
+    color : #0d6efd;
+}
+
+.container .icons a{
+    color: white;
+}
+
+span{
+    color: skyblue;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bolder;
+    font-size: 30px;
+}
+
+
+@media screen and (max-width: 1400px) {
+    .container .container1 .image img{
+        width: 300px;
+        height: 300px;
+    }
+
+}
+
+@media screen and (max-width: 850px) {
+    .container .container1{
+        flex-direction: column;
+    }
+    .container .container1 .image{
+        order: 1;
+        margin: auto;
+        width: unset;
+    }
+    .container .container1 .image img{
+        width: 250px;
+        height: 250px;
+    }
+    .container .container1 .content{
+        order: 2;
+        text-align: center;
+        width: 80%;
+    }
+    .container  .icons i{
+        margin: 50px 20px;
+    }
+}
+
+@media screen and (max-width: 420px){
+    .container .icons i{
+        margin: 50px 15px;
+    }
+}

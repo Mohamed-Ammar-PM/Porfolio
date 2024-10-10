@@ -1,0 +1,35 @@
+.container{
+    display: flex;
+    height: 87vh;
+}
+.container .section{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-top: 30px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1px 0px 0px 0px;
+}
+.container .section p{
+    padding: 20px 0px;
+    cursor: pointer;
+}
+.container .detail{
+    width: 100%;
+    position:sticky;
+    overflow: scroll;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+.focuser{
+    background-color: #0d6efd;
+    color: white;
+    border-radius: 0px 100px 100px 0px;
+}
+
+@media screen and (max-width: 850px){
+    .container .detail{
+        overflow-y: unset;
+    }
+}

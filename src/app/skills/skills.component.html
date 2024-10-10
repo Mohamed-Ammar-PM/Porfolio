@@ -1,0 +1,37 @@
+<div class="container">
+    <div class="box">
+        <h2>Technical Skills</h2>
+        <div class="technical">
+            <i class="fa-solid fa-circle-chevron-left"
+                [ngStyle]="{'z-index' : (TechCount == 0) ? '-5':'unset' , 'opacity' : (TechCount == 0) ? '0':'1'}"
+                (click)="Decrement('T')"></i>
+            <div class="card">
+                <h2>{{Technical[TechCount].name}}</h2>
+                <div class="border">
+                    <div class="progress"
+                        [ngStyle]="{'width': (Technical[TechCount].skill == 'Expert') ? '100%':'60%'}">
+
+                    </div>
+                </div>
+                <p>{{Technical[TechCount].skill}}</p>
+            </div>
+            <i class="fa-solid fa-circle-chevron-right"
+                [ngStyle]="{'z-index' : (Technical.length-1 == TechCount) ? '-5':'unset', 'opacity' : (Technical.length-1 == TechCount) ? '0':'1'}"
+                (click)="Increment('T')"></i>
+        </div>
+    </div>
+    <div class="box">
+        <h2>Soft Skills</h2>
+        <div class="soft">
+            <i class="fa-solid fa-circle-chevron-left"
+                [ngStyle]="{'z-index' : (SoftCount == 0) ? '-5':'unset' , 'opacity' : (SoftCount == 0) ? '0':'1'}"
+                (click)="Decrement('S')"></i>
+            <div class="card">
+                <h2>{{soft[SoftCount].name}}</h2>
+            </div>
+            <i class="fa-solid fa-circle-chevron-right"
+                [ngStyle]="{'z-index' : (soft.length-1 == SoftCount) ? '-5':'unset', 'opacity' : (soft.length-1 == SoftCount) ? '0':'1'}"
+                (click)="Increment('S')"></i>
+        </div>
+    </div>
+</div>

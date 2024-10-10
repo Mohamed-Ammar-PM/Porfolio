@@ -1,0 +1,21 @@
+<div class="container">
+    <div class="section" *ngIf="check else notcheck" [ngStyle]="{'width':'30%'}">
+        <p routerLink="/summary" [ngClass]="{'focuser': focuser[0]}" (click)="focus(0)">Profile Summary</p>
+        <p routerLink="/education" [ngClass]="{'focuser': focuser[1]}" (click)="focus(1)">Education</p>
+        <p routerLink="/work" [ngClass]="{'focuser': focuser[2]}" (click)="focus(2)">Work Experience</p>
+        <p routerLink="/skills" [ngClass]="{'focuser': focuser[3]}" (click)="focus(3)">My Skills</p>
+        <p routerLink="/projects" [ngClass]="{'focuser': focuser[4]}" (click)="focus(4)">My projects</p>
+    </div>
+    <ng-template #notcheck>
+    <div class="section" [ngStyle]="{'width':'100px'}">
+        <p routerLink="/summary" [ngClass]="{'focuser': focuser[0]}" (click)="focus(0)"><i class="fa-solid fa-user"></i></p>
+        <p routerLink="/education" [ngClass]="{'focuser': focuser[1]}" (click)="focus(1)"><i class="fa-solid fa-book"></i></p>
+        <p routerLink="/work" [ngClass]="{'focuser': focuser[2]}" (click)="focus(2)"><i class="fa-solid fa-briefcase"></i></p>
+        <p routerLink="/skills" [ngClass]="{'focuser': focuser[3]}" (click)="focus(3)"><i class="fa-solid fa-lightbulb"></i></p>
+        <p routerLink="/projects" [ngClass]="{'focuser': focuser[4]}" (click)="focus(4)"><i class="fa-solid fa-laptop-code"></i></p>
+    </div>
+</ng-template>
+    <div class="detail">
+        <router-outlet></router-outlet>
+    </div>
+</div>

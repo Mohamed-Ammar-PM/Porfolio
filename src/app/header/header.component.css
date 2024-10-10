@@ -1,0 +1,22 @@
+.container{
+    height: 60px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: white 0px 1px 0px 0px;
+}
+.container .container_1{
+    display: flex;
+}
+
+.container i{
+    margin-top: 25px;
+    padding: 0px 20px;
+    font-size: 20px;
+    cursor: pointer;
+}
+.container .container_1 h2{
+    margin-top: 20px;
+    font-size: 22px;
+    padding: 0px 10px;
+}
