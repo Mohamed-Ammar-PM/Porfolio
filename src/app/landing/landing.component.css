@@ -88,6 +88,9 @@ span{
 }
 
 @media screen and (max-width: 850px) {
+    .container{
+        margin-top: 3vh;
+    }
     .container .container1{
         flex-direction: column;
     }
