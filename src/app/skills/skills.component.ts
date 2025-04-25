@@ -54,6 +54,11 @@ export class SkillsComponent {
       id: 7,
       name: "JAVA",
       skill: "Intermediate"
+    },
+    {
+      id: 8,
+      name: "Springboot",
+      skill: "Intermediate"
     }
   ]
 
